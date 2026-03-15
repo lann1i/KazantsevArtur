@@ -9,56 +9,85 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="241dp"
-        android:layout_height="121dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="88dp"
-        android:text="фЦВФЦВФЦвыф"
+        android:layout_width="229dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="36dp"
+        android:text=""
         android:textAlignment="center"
         android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="229dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
         android:id="@+id/editTextPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="phone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="202dp"
-        android:layout_height="291dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="104dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
-        app:srcCompat="@drawable/mirea_coat_of_arms" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
+    <EditText
+        android:id="@+id/editTextPhone2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="60dp"
-        android:text="CheckBox"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="44dp"
-        android:onClick="onNextActivity1"
-        android:text="На прошлую страницу"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <FrameLayout
+        android:layout_width="409dp"
+        android:layout_height="575dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone2"
+        app:layout_constraintVertical_bias="0.533">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="60dp"
+            app:srcCompat="@drawable/mirea_coat_of_arms" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="231dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="490dp"
+            android:layout_marginEnd="10dp"
+            android:onClick="onNextActivity1"
+            android:text="На прошлую страницу" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:text="text" />
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

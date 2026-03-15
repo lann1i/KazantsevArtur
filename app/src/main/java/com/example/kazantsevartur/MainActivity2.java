@@ -3,6 +3,7 @@ package com.example.kazantsevartur;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -10,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import org.w3c.dom.Text;
 
 public class MainActivity2 extends AppCompatActivity {
 
@@ -24,18 +27,21 @@ public class MainActivity2 extends AppCompatActivity {
             return insets;
         });
 
-        Bundle arguments = getIntent().getExtras();
-        if(arguments != null) {
-            String name = arguments.get("name").toString();
-            String group = arguments.get("group").toString();
-            int age = arguments.getInt("age");
-            int score = arguments.getInt("score");
-            TextView messageText = findViewById(R.id.textView2);
-            messageText.setText("Name " + name + "\nGroup " + group + "\nAge " + age + "\nScore " + score);
+        MyObject myObjectInput= (MyObject) getIntent().getSerializableExtra("myObject");
+        TextView text=findViewById(R.id.textView8);
+        text.setText(getResources().getString(R.string.trainer));
+        if (myObjectInput!=null) {
+            TextView nameText = findViewById(R.id.textView2);
+            TextView ageText = findViewById(R.id.textView7);
+            TextView groupText = findViewById(R.id.editTextPhone);
+            TextView scoreText = findViewById(R.id.editTextPhone2);
+            nameText.setText("Name " + myObjectInput.getName());
+            groupText.setText("Group " + myObjectInput.getGroup());
+            ageText.setText("Age " + myObjectInput.getAge());
+            scoreText.setText("Score " + myObjectInput.getScore());
         }
     }
     public void onNextActivity1(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        finish();
     }
 }
