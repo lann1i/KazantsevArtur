@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/scroll_demo"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 20 TextView для прокрутки -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="3. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="4. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="5. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="6. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="7. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="8. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="9. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="10. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="11. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="12. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="13. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="14. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="15. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="16. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="17. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="18. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="19. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="20. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="21. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="22. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="23. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="24. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="25. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="26. Элемент" android:padding="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="27. Элемент" android:padding="8dp"/>
+
+            <EditText
+                android:id="@+id/etBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите текст"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="back"/>
+
+</LinearLayout>

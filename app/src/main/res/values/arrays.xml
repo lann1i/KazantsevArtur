@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories">
+        <item>Фрукты</item>
+        <item>Овощи</item>
+        <item>Ягоды</item>
+    </string-array>
+
+    <string-array name="fruits">
+        <item>Яблоко</item>
+        <item>Банан</item>
+        <item>Апельсин</item>
+        <item>Груша</item>
+        <item>Виноград</item>
+    </string-array>
+
+    <string-array name="vegetables">
+        <item>Морковь</item>
+        <item>Картофель</item>
+        <item>Огурец</item>
+        <item>Помидор</item>
+        <item>Лук</item>
+    </string-array>
+
+    <string-array name="berries">
+        <item>Клубника</item>
+        <item>Малина</item>
+        <item>Черника</item>
+        <item>Смородина</item>
+        <item>Вишня</item>
+    </string-array>
+</resources>

@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_tasks" android:icon="@drawable/task" android:title="Задачи"/>
+    <item android:id="@+id/nav_finance" android:icon="@drawable/finance" android:title="Финансы"/>
+    <item android:id="@+id/nav_second_activity" android:icon="@drawable/home" android:title="Второй экран"/>
+</menu>
