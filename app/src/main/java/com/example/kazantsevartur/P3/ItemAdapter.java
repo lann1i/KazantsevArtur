@@ -1,4 +1,4 @@
-package com.example.kazantsevartur;
+package com.example.kazantsevartur.P3;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.kazantsevartur.R;
+
 import java.util.List;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
@@ -18,6 +20,8 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         this.items= items;
     }
 
+
+    // Хранит данные по одному объекту
     @NonNull
     @Override
     public ItemAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -25,6 +29,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         return new ViewHolder(view);
     }
 
+    //привязку объекта ViewHolder к объекту элемента по определенной позиции.
     @Override
     public void onBindViewHolder(@NonNull ItemAdapter.ViewHolder holder, int position) {
         Item item= items.get(position);
@@ -32,6 +37,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
         holder.ivIcon.setImageResource(item.getImage());
     }
 
+    // возвращает количество объектов в списке
     @Override
     public int getItemCount() {
         return items.size();

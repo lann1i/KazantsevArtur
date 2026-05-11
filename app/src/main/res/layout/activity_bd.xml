@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <!-- Поля ввода -->
+        <EditText android:id="@+id/et_name" android:hint="Название фильма" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/et_genre" android:hint="Жанр" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/et_year" android:hint="Год" android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/et_director" android:hint="Режиссёр" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <RatingBar android:id="@+id/rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="0.5"/>
+
+        <!-- Вывод -->
+        <TextView android:id="@+id/tv_output" android:layout_width="match_parent" android:layout_height="200dp"
+            android:background="#EEE" android:padding="8dp" android:scrollbars="vertical" android:text="Список фильмов:"/>
+
+        <!-- Кнопки -->
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/btn_add" android:text="Добавить" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+            <Button android:id="@+id/btn_read" android:text="Показать все" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/btn_search" android:text="Поиск" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+            <Button android:id="@+id/btn_update" android:text="Изменить" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+            <Button android:id="@+id/btn_delete" android:text="Удалить" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

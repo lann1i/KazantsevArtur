@@ -1,8 +1,10 @@
-package com.example.kazantsevartur;
+package com.example.kazantsevartur.P3;
 
 import android.os.Bundle;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.kazantsevartur.R;
 
 public class ScrollActivity extends AppCompatActivity {
 

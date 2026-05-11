@@ -1,13 +1,13 @@
-package com.example.kazantsevartur;
+package com.example.kazantsevartur.P3;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.kazantsevartur.R;
 
 public class SpinnerActivity extends AppCompatActivity {
 
@@ -17,11 +17,11 @@ public class SpinnerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_spinner);
 
         Spinner spinner = findViewById(R.id.spinner);
-        TextView tvSelected = findViewById(R.id.tvSelected);
         String[] categories = getResources().getStringArray(R.array.categories);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_item, categories);
+        //определяем разметку для использования при выборе элемента
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 

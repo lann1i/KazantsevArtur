@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,9 +16,8 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.KazantsevArtur">
         <activity
-            android:name=".Pr3Part2Activity2"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            android:name=".P5.Part2.bd"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,24 +25,59 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Pr3Part2Activity1"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
-        </activity>
-        <activity
-            android:name=".ScrollActivity"
-            android:exported="true" />
-        <activity
-            android:name=".SpinnerActivity"
-            android:exported="true" />
-        <activity
-            android:name=".Pr3Activity2"
-            android:exported="true" />
-        <activity android:name=".RecyclerActivity" android:exported="true" />
-        <activity
-            android:name=".Pr3Activity1"
+            android:name=".P5.Part2.SharedPreference"
             android:exported="true">
+
         </activity>
+        <activity
+            android:name=".P5.Part1.ReadExternalActivity"
+            android:exported="true" />
+        <activity
+            android:name=".P5.Part1.Pr5_activity1"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".RestAPI"
+            android:exported="false" />
+        <activity
+            android:name=".P4.Part2.Test"
+            android:exported="false" />
+        <activity
+            android:name=".P4.Part1.P4Z2"
+            android:exported="false" />
+        <activity
+            android:name=".P4.Part1.P4Part1"
+            android:exported="false" />
+
+        <service
+            android:name=".P4.Part1.TimerService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".P3.Pr3Part2Activity2"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".P3.Pr3Part2Activity1"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".P3.ScrollActivity"
+            android:exported="true" />
+        <activity
+            android:name=".P3.SpinnerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".P3.Pr3Activity2"
+            android:exported="true" />
+        <activity
+            android:name=".P3.RecyclerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".P3.Pr3Activity1"
+            android:exported="true" />
         <activity
             android:name=".MainActivity2"
             android:exported="true" />

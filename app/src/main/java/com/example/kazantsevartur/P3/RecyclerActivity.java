@@ -1,16 +1,15 @@
-package com.example.kazantsevartur;
+package com.example.kazantsevartur.P3;
 
-import android.app.AppComponentFactory;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.SimpleAdapter;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.kazantsevartur.R;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class RecyclerActivity extends AppCompatActivity {

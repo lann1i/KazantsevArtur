@@ -1,4 +1,4 @@
-package com.example.kazantsevartur;
+package com.example.kazantsevartur.P3;
 
 public class Item {
     private String title;

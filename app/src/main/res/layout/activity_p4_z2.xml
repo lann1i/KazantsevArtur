@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Демонстрация диалоговых окон"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- AlertDialog -->
+    <Button
+        android:id="@+id/btnAlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AlertDialog (подтверждение)"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- DatePickerDialog -->
+    <Button
+        android:id="@+id/btnDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DatePickerDialog"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- TimePickerDialog -->
+    <Button
+        android:id="@+id/btnTimePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TimePickerDialog"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Custom Dialog -->
+    <Button
+        android:id="@+id/btnCustomDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom Dialog"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Поля для отображения результатов -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Результаты:"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvAlertResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AlertDialog: не выбран"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvDateResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Дата: не выбрана"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTimeResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Время: не выбрано"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvCustomResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom: не введено"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
