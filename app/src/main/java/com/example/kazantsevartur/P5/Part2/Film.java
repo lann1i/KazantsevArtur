@@ -17,7 +17,6 @@ public class Film {
         this.director = director;
     }
 
-    // Геттеры
     public int getId() { return id; }
     public String getName() { return name; }
     public float getRate() { return rate; }

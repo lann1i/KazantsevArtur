@@ -49,7 +49,7 @@ public class Database extends SQLiteOpenHelper {
     // CREATE
     public boolean addFilm(String name, float rate, String genre, int year, String director) {
         SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues cv = new ContentValues();
+        ContentValues cv = new ContentValues(); //словарь
         cv.put(COL_NAME, name);
         cv.put(COL_RATE, rate);
         cv.put(COL_GENRE, genre);

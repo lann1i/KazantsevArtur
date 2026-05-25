@@ -30,7 +30,6 @@ public class bd extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bd);
 
-        // Инициализация views
         etName = findViewById(R.id.et_name);
         etGenre = findViewById(R.id.et_genre);
         etYear = findViewById(R.id.et_year);
@@ -45,7 +44,7 @@ public class bd extends AppCompatActivity {
 
         dbHelper = new Database(this);
 
-        // === CREATE ===
+        // CREATE
         btnAdd.setOnClickListener(v -> {
             if (!validateInput()) return;
             Film film = getFilmFromInput();
@@ -58,10 +57,10 @@ public class bd extends AppCompatActivity {
             }
         });
 
-        // === READ ===
+        // READ
         btnRead.setOnClickListener(v -> loadAllFilms());
 
-        // === SEARCH ===
+        // SEARCH
         btnSearch.setOnClickListener(v -> {
             String genre = etGenre.getText().toString().trim();
             if (genre.isEmpty()) { toast("Введите жанр для поиска"); return; }
@@ -69,11 +68,11 @@ public class bd extends AppCompatActivity {
             displayFilms(results, "Поиск по жанру: " + genre);
         });
 
-        // === UPDATE ===
+        // UPDATE
         btnUpdate.setOnClickListener(v -> {
             String name = etName.getText().toString().trim();
             if (name.isEmpty()) { toast("Введите название для обновления"); return; }
-            // Ищем фильм по названию (для простоты)
+            // Ищем фильм по названию
             List<Film> all = dbHelper.getAllFilms();
             for (Film f : all) {
                 if (f.getName().equals(name)) {
@@ -90,7 +89,7 @@ public class bd extends AppCompatActivity {
             toast("Фильм не найден");
         });
 
-        // === DELETE ===
+        // DELETE
         btnDelete.setOnClickListener(v -> {
             String name = etName.getText().toString().trim();
             if (name.isEmpty()) { toast("Введите название для удаления"); return; }

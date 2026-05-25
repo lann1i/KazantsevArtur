@@ -3,8 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
 
     <application
         android:allowBackup="true"
@@ -16,27 +19,41 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.KazantsevArtur">
         <activity
-            android:name=".P5.Part2.bd"
-            android:exported="true" >
+            android:name=".P6.Part2.ProviderActivity"
+            android:exported="true">
+
+        </activity>>
+        <activity
+            android:name=".P6.Part2.JsonActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity>>
+        <provider
+            android:name=".P6.Part2.BookProvider"
+            android:authorities="com.example.kazantsevartur.provider"
+            android:exported="true"
+            android:grantUriPermissions="true"/>
         <activity
-            android:name=".P5.Part2.SharedPreference"
+            android:name=".P6.Part1.P6Part1"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".P5.Part2.bd"
+            android:exported="true"></activity>
+        <activity
+            android:name=".P5.Part2.SharedPreference"
+            android:exported="true" />
         <activity
             android:name=".P5.Part1.ReadExternalActivity"
             android:exported="true" />
         <activity
             android:name=".P5.Part1.Pr5_activity1"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".RestAPI"
             android:exported="false" />
@@ -93,6 +110,10 @@
         <activity
             android:name=".Pr2_Activity3"
             android:exported="true" />
+
+        <receiver
+            android:name=".P6.Part1.AlarmReceiver"
+            android:exported="false" />
     </application>
 
 </manifest>

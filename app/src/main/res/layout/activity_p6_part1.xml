@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="300dp">
+
+        <!-- WebView -->
+        <WebView android:id="@+id/webview" android:layout_width="match_parent" android:layout_height="300dp"/>
+
+        <!-- Анимации -->
+        <ImageView android:id="@+id/rotateImageView" android:src="@android:drawable/ic_menu_rotate" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="8dp"/>
+        <Button android:id="@+id/moveButton" android:text="Переместить" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/scaleTextView" android:text="Масштаб" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp"/>
+
+        <!-- MediaPlayer -->
+        <Button android:id="@+id/playButton" android:text="Play/Pause" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- Уведомления -->
+        <Button android:id="@+id/notifyButton" android:text="Уведомление сейчас" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/delayedNotifyButton" android:text="Уведомление через 10 сек" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
